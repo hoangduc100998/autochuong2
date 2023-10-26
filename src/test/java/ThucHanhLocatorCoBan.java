@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-public class TestSelenium {
+
+public class ThucHanhLocatorCoBan {
     public static void main(String[]args) {
         //Khởi tạo browser với Chrome
         WebDriver driver;
@@ -15,19 +16,11 @@ public class TestSelenium {
         //Mở trang https://demoqa.com/text-box
         driver.get("https://demoqa.com/text-box/");
 
-//        //1.Input information in Full Name by id
-//        driver.findElement(By.xpath("//input[@placeholder=\"Full Name\"]")).sendKeys("Vincent");
+        //[Thực hành] Tìm kiếm phần tử theo XPath
+        driver.findElement(By.xpath("//input[@placeholder='Full Name']")).sendKeys("HoangDuc");
 
+        //[Thực hành] Tìm kiếm phần tử theo CSS
+        driver.findElement(By.cssSelector("input[placeholder='name@example.com']")).sendKeys("hoangduc100498@gmail.com");
 
-//        //1.Input information in Full Name by cssSelector
-//        driver.findElement(By.cssSelector("input[placeholder='Full Name']")).sendKeys("HoangDuc");
-
-        //click Home
-        //driver.findElement(By.linkText("Home")).click();
-
-        driver.findElement(By.partialLinkText("me")).click();
-
-//        //1.Input information in Full Name by id
-//        driver.findElement(By.id("userName")).sendKeys("Vincent");
     }
 }
