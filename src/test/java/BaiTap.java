@@ -21,5 +21,6 @@ public class BaiTap {
         //[BaiTap] Theo placeholder:
         driver.findElement(By.xpath("//input[@placeholder=\"Last Name\"]")).sendKeys("Duong");
 
+
     }
 }
