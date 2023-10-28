@@ -22,5 +22,16 @@ public class BaiTap {
         driver.findElement(By.xpath("//input[@placeholder=\"Last Name\"]")).sendKeys("Duong");
 
 
+        //email
+        driver.findElement(By.xpath("//input[@id='userEmail']")).sendKeys("hoangduc100498@gmail.com");
+        //phone
+        driver.findElement(By.xpath("//input[@id='userNumber']")).sendKeys("0923242935");
+
+        //phone
+        driver.findElement(By.xpath("//input[@id='dateOfBirthInput']"));
+
+
+        //click Submit
+        driver.findElement(By.linkText("Submit")).click();
     }
 }
