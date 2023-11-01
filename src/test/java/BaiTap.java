@@ -30,8 +30,7 @@ public class BaiTap {
         //phone
         driver.findElement(By.xpath("//input[@id='dateOfBirthInput']"));
 
-
-        //click Submit
-        driver.findElement(By.linkText("Submit")).click();
+        //click Choose File
+        driver.findElement(By.linkText("uploadPicture")).click();
     }
 }
