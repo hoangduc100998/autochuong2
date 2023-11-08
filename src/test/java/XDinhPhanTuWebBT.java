@@ -98,8 +98,8 @@ public class XDinhPhanTuWebBT {
         driver.findElement(By.xpath
                 ("//form[@id='general-info-form']//button[@type='submit'][normalize-space()='Save']")).click();
 
-        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait1.until(ExpectedConditions.visibilityOf(By.xpath("//form[@id='general-info-form']//button[@type='submit'][normalize-space()='Save']\")).click()")));
+        //WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //wait1.until(ExpectedConditions.visibilityOf(By.xpath("//form[@id='general-info-form']//button[@type='submit'][normalize-space()='Save']\")).click()")));
 
         //11. Mo sang trang Social Links
         driver.findElement(By.xpath("//a[normalize-space()='Social Links']")).click();
