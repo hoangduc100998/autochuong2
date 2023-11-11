@@ -9,9 +9,7 @@ public class test6 {
     public static void main(String[] args) {
         //Khởi tạo browser với Chrome
         WebDriverManager.chromedriver().setup();
-
         WebDriver driver = new ChromeDriver();
-
         driver.get("https://demoqa.com/select-menu");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
