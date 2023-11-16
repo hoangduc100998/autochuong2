@@ -45,10 +45,11 @@ public class BTCoBanAlerts {
 
         //6. Click đăng nhập (Bấm f5 trên bàn phím cho nó đẳng cấp)
 
-//        Actions actions = new Actions(driver);
-//        actions.keyDown(Keys.COMMAND).keyDown(Keys.SHIFT).sendKeys("r")
-//                .keyUp(Keys.COMMAND).keyUp(Keys.SHIFT).perform();
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.COMMAND).keyDown(Keys.SHIFT).keyDown("r")
+                .keyUp(Keys.COMMAND).keyUp(Keys.SHIFT).perform();
 
+        Thread.sleep(1000);
 
 //        Robot robot = new Robot();
 //        // press key Ctrl+Shift+r
@@ -66,7 +67,7 @@ public class BTCoBanAlerts {
 //        robot.keyRelease(KeyEvent.VK_CONTROL);
 
         //6. Click đăng nhập - f5 lai trang
-        driver.navigate().refresh();
+        //driver.navigate().refresh();
 
         //7. Thực hiện lặp lại bước 2,3,4
         //Nhập thông tin cho Customer ID "Vincent"
